@@ -1,0 +1,9 @@
+.b-blockBot {
+    width: 1070px;
+    height: 58px;
+    background: #FAF7F6;
+
+    @include respondMin(lgTo) {
+        width: 100%;
+    }
+}

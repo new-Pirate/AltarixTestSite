@@ -1,0 +1,76 @@
+.b-popup {
+    position: fixed;
+    top: 100px;
+    background: #1b325f;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 40px;
+    text-align: center;
+    display: none;
+
+    @include respondMin(esTo) {
+        width: 300px;
+    }
+
+    &__close {
+        position: absolute;
+        cursor: pointer;
+        background: #fff;
+        padding: 10px;
+        top: 2px;
+        right: 2px;
+        
+        &:hover {
+            background: #F9F7A6;
+        }
+    }
+
+    &__item {
+        box-sizing: border-box;
+        font-family: $tahoma-font;
+        font-size: 21px;
+        font-weight: bold;
+        width: 300px;
+        color: #1b325f;
+        padding: 5%;
+
+        &_position {
+            margin-bottom: 20px;
+        }
+
+        &::placeholder {
+            color: #1b325f;
+        }
+    }
+
+    &__name {
+        height: 68px;
+    }
+
+    &__email {
+        height: 68px;
+    }
+
+    &__textarea {
+        height: 150px;
+        resize: none;
+    }
+
+    &__button {
+        box-sizing: border-box;
+        height: 50px;
+        width: 300px;
+        cursor: pointer;
+        border: none;
+        color: #1b325f;
+        background: #fff;
+        font-family: $tahoma-font;
+        font-size: 21px;
+        font-weight: bold;
+
+        &:hover {
+            background: #F9F7A6;
+        }
+    }
+}

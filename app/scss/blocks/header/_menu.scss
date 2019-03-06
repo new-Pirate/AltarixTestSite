@@ -1,0 +1,56 @@
+.b-menu {
+    width: 1070px;
+    height: 58px;
+    background: #FAF7F6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: $georgia-font;
+    font-size: 25px;
+
+    @include respondMin(lgTo) {
+        width: 100%;
+        
+    }
+
+    @include respondMin(esTo) {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__item {
+        color: #1b325f;
+        padding: 8px 20px;
+
+        &_positionItem1 {
+            margin-left: 40px;
+
+            @include respondMin(esTo) {
+                margin: 0;
+            }
+        }
+
+        &_positionItem2 {
+            margin-right: 10px;
+            
+            @include respondMin(esTo) {
+                margin: 0;
+            }
+        }
+
+        &_positionItem3 {
+            margin-right: 32px;
+
+            @include respondMin(esTo) {
+                margin: 0;
+            }
+        }
+
+        &:hover {
+            font-weight: bold;
+            background: #3EB5F1;
+            padding: 8px 20px;
+        }
+    }
+}

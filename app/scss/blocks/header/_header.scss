@@ -1,0 +1,45 @@
+.b-header {
+    width: 1280px;
+    margin: 0 auto;
+    padding: 48px 0 90px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include respondCustom(0, 1280px) {
+        width: 100%;
+    }
+
+    &__top {
+        width: 1070px;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+
+        @include respondMin(lgTo) {
+            width: 100%;
+        }
+
+        @import "_logo";
+        @import "_contact";
+
+        &_marginBottom {
+            margin-bottom: 58px;
+        }
+    }
+
+    &__bot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 1280px;
+
+        @include respondCustom(0, 1280px) {
+            width: 100%;
+        }
+
+        @import "_menu";
+        @import "_slogan";
+        @import "_blockBot";
+    }
+}

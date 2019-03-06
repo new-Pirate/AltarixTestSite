@@ -1,0 +1,23 @@
+.b-logo {
+    display: flex;
+
+    &__img {
+        margin-right: 28px;
+    }
+
+    &__text {
+        font-family: $georgia-font;
+        color: #1b325f;
+
+        :nth-child(1) {
+            font-size: 30px;
+            letter-spacing: 0.4px;
+            margin-bottom: 10px;
+        }
+
+        :nth-child(2) {
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+    }
+}

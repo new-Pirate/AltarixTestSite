@@ -1,0 +1,58 @@
+.b-footer {
+    width: 1280px;
+    margin: 0 auto;
+    background: #1b325f;
+    padding: 86px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $georgia-font;
+    color: #fffffb;
+    font-weight: bold;
+
+    @include respondCustom(0, 1280px) {
+        width: 100%;
+    }
+
+    &__title {
+        font-size: 33px;
+        letter-spacing: 0.4px;
+
+        &_positon {
+            margin-bottom: 78px;
+        }
+    }
+
+    &__contacts {
+        width: 970px;
+        font-size: 21px;
+        display: flex;
+        justify-content: space-between;
+        letter-spacing: 0.2px;
+
+        @include respondMin(mdTo) {
+            width: 100%;
+        }
+
+        @include respondMin(smTo) {
+            text-align: center;
+        }
+
+        @include respondMin(esTo) {
+            flex-direction: column; 
+            align-items: center;
+        }
+    }
+
+    &__phone {
+        color: #fffffb;
+    }
+
+    &__skype {
+        color: #fffffb;
+    }
+
+    &__email {
+        color: #fffffb;
+    }
+}

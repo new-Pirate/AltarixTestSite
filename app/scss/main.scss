@@ -1,0 +1,11 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "./_mixins/media"; // Always at the end
+
+@import "./blocks/_blueLine";
+@import "./blocks/header/_header";
+@import "./blocks/situation/_situation";
+@import "./blocks/services/_services";
+@import "./blocks/form/_form";
+@import "./blocks/footer/_footer";

@@ -1,0 +1,10 @@
+.b-blueLine {
+    margin: 0 auto;
+    width: 850px;
+    height: 1px;
+    background: #49aaff;
+
+    @include respondMin(mdTo) {
+        width: 100%;
+    }
+}

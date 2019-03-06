@@ -1,0 +1,18 @@
+.b-formButton {
+    width: 420px;
+    height: 57px;
+    background: #1b325f;
+    font-family: $georgia-font;
+    color: #eff5fa;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+        background: #1b425f;
+    }
+
+    &_position {
+        margin-bottom: 6px;
+    }
+}

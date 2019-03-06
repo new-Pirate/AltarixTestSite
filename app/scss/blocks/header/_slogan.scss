@@ -1,0 +1,57 @@
+.b-sloganBackground {
+    height: 718px;
+    width: 1280px;
+    background: url(../img/sloganBackground.jpg) no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respondCustom(0px, 1280px) {
+        background-size: cover;
+        width: 100%;
+    }
+}
+
+.b-slogan {
+    width: 635px;
+    height: 515px;
+    background: #1b325f;
+    color: #fff;
+    font-family: $tahoma-font;
+    font-size: 29px;
+
+    @include respondMin(smTo) {
+        width: 100%;
+    }
+    
+    &__text {
+        margin: 0 auto;
+        text-align: center;
+        width: 462px;
+        line-height: 35px;
+
+        @include respondMin(esTo) {
+            width: 100%;
+        }
+
+        &_position1 {
+            margin-top: 87px;
+        }
+    
+        &_position2 {
+            margin-top: 35px;
+        }
+    
+        &_position3 {
+            margin-top: 35px;
+        }
+    
+        &_position4 {
+            margin-top: 35px;
+        }
+
+        &_active {
+            color: #3bdd70;
+        }
+    }
+}
